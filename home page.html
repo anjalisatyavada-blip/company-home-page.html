@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Company Home Page</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background:#f8fafc;
+    color:#333;
+}
+
+header{
+    background:#0f172a;
+    color:white;
+    padding:20px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:25px;
+}
+
+.hero{
+    min-height:90vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    background:linear-gradient(135deg,#2563eb,#06b6d4);
+    color:white;
+    padding:40px;
+}
+
+.hero-content h1{
+    font-size:60px;
+    margin-bottom:20px;
+}
+
+.hero-content p{
+    font-size:20px;
+    margin-bottom:30px;
+}
+
+.btn{
+    display:inline-block;
+    background:white;
+    color:#2563eb;
+    padding:15px 30px;
+    border-radius:30px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.section{
+    padding:80px 8%;
+}
+
+.title{
+    text-align:center;
+    font-size:40px;
+    margin-bottom:50px;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.about{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+    align-items:center;
+}
+
+.about img{
+    width:100%;
+    border-radius:15px;
+}
+
+.contact{
+    background:#0f172a;
+    color:white;
+    text-align:center;
+}
+
+footer{
+    background:#020617;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+@media(max-width:768px){
+    .hero-content h1{
+        font-size:40px;
+    }
+
+    .about{
+        grid-template-columns:1fr;
+    }
+
+    nav{
+        display:none;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">MyCompany</div>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-content">
+        <h1>Grow Your Business With Us</h1>
+        <p>Innovative solutions for modern companies.</p>
+        <a href="#contact" class="btn">Get Started</a>
+    </div>
+</section>
+
+<section id="services" class="section">
+    <h2 class="title">Our Services</h2>
+
+    <div class="cards">
+        <div class="card">
+            <h3>Web Development</h3>
+            <p>Modern websites and web applications for businesses.</p>
+        </div>
+
+        <div class="card">
+            <h3>Mobile Apps</h3>
+            <p>Android and iOS applications with excellent user experience.</p>
+        </div>
+
+        <div class="card">
+            <h3>Digital Marketing</h3>
+            <p>SEO, social media marketing, and online growth strategies.</p>
+        </div>
+    </div>
+</section>
+
+<section id="about" class="section">
+    <h2 class="title">About Us</h2>
+
+    <div class="about">
+        <img src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?w=1200" alt="Office">
+
+        <div>
+            <h3>We Build Successful Businesses</h3>
+            <br>
+            <p>
+                Our team delivers innovative technology solutions that help
+                organizations increase efficiency, improve customer experience,
+                and accelerate growth.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="section contact">
+    <h2 class="title">Contact Us</h2>
+    <p>Email: info@mycompany.com</p>
+    <br>
+    <p>Phone: +91 98765 43210</p>
+</section>
+
+<footer>
+    © 2026 MyCompany. All Rights Reserved.
+</footer>
+
+</body>
+</html>
